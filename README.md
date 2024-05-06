@@ -4,7 +4,7 @@ This Helm chart enables you to deploy ClickHouse in a Kubernetes environment wit
 
 ## Deployment Instructions
 
-### 1. Clone and install clickhouse
+### Clone and install clickhouse
 
 Clone the Git repository containing the ClickHouse Helm chart.
 
@@ -18,7 +18,7 @@ kubectl get all
 
 
 
-### 4. go inside the ClickHouse Pod
+### go inside the ClickHouse Pod
 
 
 ```bash
@@ -27,7 +27,7 @@ kubectl exec -it <pod_name>  /bin/bash
 
 
 
-### 5. Monitor Storage Usage
+###  Monitor Storage Usage
 
 Check the disk usage of the "hot" and "cold" storage volumes within the ClickHouse container.
 
@@ -39,7 +39,7 @@ du -h /mnt/clickhouse/cold/
 ![alt text](<Screenshot from 2024-05-06 13-26-55.png>)
 
 
-### 6. Interact with ClickHouse Client
+### Interact with ClickHouse Client
 
 Use the ClickHouse client to interact with the ClickHouse server.
 
@@ -47,7 +47,7 @@ Use the ClickHouse client to interact with the ClickHouse server.
 clickhouse-client
 ```
 
-### 7. Create ClickHouse Table
+### Create ClickHouse Table
 
 Create a sample table (`dz_test`) in ClickHouse with the specified schema and storage settings.
 
@@ -66,7 +66,7 @@ SETTINGS storage_policy = 'hot_cold_policy';
 
 ![alt text](<Screenshot from 2024-05-06 13-29-44.png>)
 
-### 8. Insert Test Data
+###  Insert Test Data
 
 Insert test data into the ClickHouse table to trigger data movement from "hot" to "cold" storage.
 
