@@ -90,11 +90,11 @@ To verify data movement from "hot" to "cold" storage as demonstrated in the imag
 
 
 
-### During Data Insertion (Hot Storage Usage)
+- During the Data Insertion (Hot Storage Usage)
 ![Screenshot from 2024-05-06 13-44-51](https://github.com/ashu180674/Ashutosh-Datazip-Assignment/assets/105533911/1ee0fcc6-9191-4106-9272-fbb097c4d65d)
 
 
-### After Data Movement to Cold Storage
+- After the Data Movement to Cold Storage
 
 <img width="1459" alt="Screenshot 2024-05-05 at 9 49 27 PM" src="https://github.com/ashwaq06/Ashwaq-Datazip-Assignement/assets/80192952/c95d0674-5bfb-4277-96e0-85e73eaadaa2">
 # Ashutosh-Datazip-Assignment
