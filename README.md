@@ -1,4 +1,4 @@
-# ClickHouse Deployment with Hot-Cold Configuration
+#     Ashutosh-Datazip-Assignment 
 
 This Helm chart enables you to deploy ClickHouse in a Kubernetes environment with a hot-cold configuration. ClickHouse is set up to automatically move data from the "hot" storage to the "cold" storage based on a `move_factor` threshold of 20%.
 
