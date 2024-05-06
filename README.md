@@ -4,38 +4,27 @@ This Helm chart enables you to deploy ClickHouse in a Kubernetes environment wit
 
 ## Deployment Instructions
 
-### 1. Clone the Repository
+### 1. Clone and install clickhouse
 
 Clone the Git repository containing the ClickHouse Helm chart.
 
 ```bash
-git clone https://github.com/ashwaq06/Ashwaq-Datazip-Assignement
-cd <path_to_cloned_repo>
+cd clickhouse
+helm install clickhouse . 
+kubectl get all
 ```
+![alt text](<Screenshot from 2024-05-06 13-24-57.png>)
 
-### 2. Install ClickHouse
 
-Use Helm to install the ClickHouse chart in the desired namespace (`clickhouse` in this example).
+
+
+### 4. go inside the ClickHouse Pod
+
 
 ```bash
-helm install clickhouse . --namespace clickhouse
+kubectl exec -it <pod_name>  /bin/bash
 ```
 
-### 3. Verify Pods
-
-After installation, confirm that the ClickHouse pods are running in the `clickhouse` namespace.
-
-```bash
-kubectl get pods -n clickhouse
-```
-
-### 4. Access ClickHouse Pod
-
-Access the ClickHouse pod for further configuration or testing.
-
-```bash
-kubectl exec -it <pod_name> -n clickhouse /bin/bash
-```
 
 
 ### 5. Monitor Storage Usage
@@ -46,6 +35,9 @@ Check the disk usage of the "hot" and "cold" storage volumes within the ClickHou
 du -h /mnt/clickhouse/hot/
 du -h /mnt/clickhouse/cold/
 ```
+
+![alt text](<Screenshot from 2024-05-06 13-26-55.png>)
+
 
 ### 6. Interact with ClickHouse Client
 
@@ -71,6 +63,8 @@ PARTITION BY D
 ORDER BY B
 SETTINGS storage_policy = 'hot_cold_policy';
 ```
+
+![alt text](<Screenshot from 2024-05-06 13-29-44.png>)
 
 ### 8. Insert Test Data
 
