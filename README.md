@@ -95,10 +95,8 @@ To verify data movement from "hot" to "cold" storage as demonstrated in the imag
 <img width="1037" alt="Screenshot 2024-05-05 at 9 44 49 PM" src="https://github.com/ashwaq06/Ashwaq-Datazip-Assignement/assets/80192952/94bb3105-3e5e-4708-9328-c163518aef39">
 
 ### During Data Insertion (Hot Storage Usage)
+![Screenshot from 2024-05-06 13-44-51](https://github.com/ashu180674/Ashutosh-Datazip-Assignment/assets/105533911/1ee0fcc6-9191-4106-9272-fbb097c4d65d)
 
-<img width="855" alt="Screenshot 2024-05-05 at 6 21 22 PM" src="https://github.com/ashwaq06/Ashwaq-Datazip-Assignement/assets/80192952/272f9d70-97c5-45eb-98e6-9c39c6edf910">
-
-<img width="1393" alt="Screenshot 2024-05-05 at 9 47 07 PM" src="https://github.com/ashwaq06/Ashwaq-Datazip-Assignement/assets/80192952/26749848-7631-4838-951e-e8bc8f3882e7">
 
 ### After Data Movement to Cold Storage
 
